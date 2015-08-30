@@ -1,0 +1,19 @@
+- tty.js:
+  - backend running shell (tumx)
+  - frontend in browser
+    - hack to add support for narrative control codes:
+      - music
+      - sound
+      - glitching?
+- each host is a docker container
+  - flat network i guess? (IPv6? probably too much trouble)
+- build runs packer to create a vagrant image
+  - or an AMI or something for remote-hosted games (sandstorm?)
+- vagrant up yields port 8022 to shell account machine ("con"?)
+- should have realistic dns (can docker's dns do FQDNs?)
+- repo layout:
+  - r00tme: super project
+    - design: this repo, with design notes
+    - "con": the user's console system
+    - systems: directories of Dockerfiles and supporting stuff
+      - this is narratively pluggable part
